@@ -1,0 +1,483 @@
+
+body {
+    font-family: 'Raleway', sans-serif; /* police */
+    font-weight : bolder;
+    font-size: 13px;
+    
+    margin-top: 0;
+    padding-top: 0;
+}
+
+a
+{ 
+ text-decoration:none; 
+ color: black;
+} 
+
+main {
+     padding-left: 50px;
+}
+
+    
+                        /* header */
+header {
+    padding-left: 50px;
+}
+
+header p {
+    list-style: none;
+    font-weight : normal;
+}
+
+.tete {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+
+h1 img {                    /* logo booki */
+    width :130px;
+    height: auto;
+}              
+
+#ancre {    
+    display: flex;                        /*   ancre   */
+    position: relative;
+    top: 0;
+    right: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#ancre div{
+    padding-top: 30px;
+    padding-left: 40px;
+    background-color: white;
+    width: 120px;
+    height: 80px;
+    border: 2px solid white; 
+    cursor: pointer;
+}
+
+
+#ancre div:hover  {
+    border-top-color: #0065FC; 
+    color: #0065FC;
+    
+}
+#ancre a:hover {
+     color: #0065FC;
+}
+
+
+
+                                    /*  ancre fin */
+
+
+                                    /*  bar de recherche  */
+#recherche {
+    display: flex;
+    outline: none;
+    height: 40px;
+    width: 320px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.champ {
+    position: relative;
+    bottom:5px;
+    height: 20px;
+    border: 1px solid #F2F2F2;
+    outline: none;
+    margin-right: 0;
+    padding-right: 0;
+    margin-bottom: 0px;
+    padding-top: 4px;
+    margin-top: 8px;
+}
+
+#recherche button {                   /* icone geolocalisation */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 29px;
+    width: 35px;
+    border: 1px solid #F2F2F2;
+    margin-left: 0px;
+    margin-top: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+ #recherche .bouton {                           /*bouton de recherche */
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 85px;
+    height: 29px;
+    margin-top: 2px;
+    cursor: pointer;
+    background-color: #0065FC;
+    color: white;
+    border: 2px solid #0065FC;
+    
+ }
+
+ .bouton p {
+     position: relative;
+     bottom: 10px;
+     right: 3px;
+    color: white;
+    width: 80px;
+ }
+
+ .formulaire{
+    padding: 0;
+    display: flex;
+    justify-content: stretch;
+    height: 36px;
+ }
+
+ .bouton i {
+     display: none;
+ }
+                                   /*  barre de recherche  */
+                                    /* barre denavigation */
+
+nav input  { 
+    border:white;
+ }
+
+nav ul {
+    list-style: none;                   /* enlever les puces */
+    display: flex;
+    justify-content: space-between;
+    width: 780px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav li {                                /* boutons nav */
+    margin: 0 0px 0 0px;
+    border: 2px solid #DEEBFF;
+    border-radius: 40px;
+    cursor: pointer;
+    padding-top: 0px;
+    padding-right: 6px;
+}
+nav ul div {    
+    margin-left: 0;                        /* "filtres" */
+    padding: 10px 0 0 0;
+}
+
+nav ul i {                                  /*icones*/
+    color:  #0065FC;
+    height: 24px;
+    width: 24px;
+    border: 3px solid #DEEBFF;
+    border-radius: 40px;
+    background-color: #DEEBFF;
+    padding: 7px 0px 0px 7px;
+    margin: 0;
+}
+
+nav li:hover {         
+    border-color: #0065FC;
+    box-shadow: inset 5px 1px 10px #0065FC; 
+}
+
+nav li:hover i {
+    color: white;
+    background-color: #0065FC;
+    border-color: #0065FC;
+}
+                                    /* barre denavigation */
+
+header p i {                            /* icone I */
+    
+    color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50px;
+    padding-left:6px;
+    padding-top: 3px;
+    
+    height:16px;
+    width: 12px;
+}
+
+                                /* main */
+
+#logement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: ;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+
+}
+
+.plus {
+    position: relative;
+    left: 38px;
+    bottom: 3px;
+    color: blue;
+
+}
+
+mark {
+    background-color: white;
+    font-size: small;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+#logement #etoileGrise {                /*etoiles de notation*/
+    color: #F2F2F2;
+}
+
+
+.fas.fa-star {
+    color: #0065FC;
+    font-size: 80%;
+}
+#logement span{
+     color: #F2F2F2;
+     
+}
+
+                                                        /*boite hebergement*/
+#hebergement {
+    order: 1;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretchs ;
+    border: 1px solid #F2F2F2;
+    width: 60%;
+    height: 550px;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.vitrine {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#hebergement h2 {
+    position: relative;
+    top: 0px;
+    left: 38px;
+}
+
+.proposition {
+    background-color: white;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 4px 4px;
+    margin: 15px;
+    box-shadow: 3px 3px 10px 0px grey;
+    
+}
+
+.proposition img {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#hebergement .proposition p {
+                                 /* marge pour les ecritures */
+    padding: 2px 15px;
+    margin: 0;
+}
+#hebergement .proposition div {
+    padding-left: 15px;
+}
+
+#prix {
+    font-size: x-small;
+    font-weight: normal;
+}
+
+.vitrineLigne{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.plus{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+   
+}
+                                            /*hébergement fin */
+
+                                                            /*boite populaire*/
+#populaire {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #F2F2F2;
+    width: 25%;
+    height: 560px;
+    background-color: #F2F2F2;
+    padding: 10px;
+    margin: 25px, 25px,25px, 25px;
+    border-radius: 20px
+
+}
+
+#populaire h2 i {
+   position: relative;
+   left: 40%;
+
+}
+
+#populaire .proposition {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 125px;
+    margin: 0px;
+}
+
+#populaire p {
+    width: 50%;
+    margin-top: 5px;
+}
+
+#populaire div {
+    padding-top: 25px;
+
+}
+
+#populaire img {
+   border-radius: 20px 0px 0px 20px;
+    width: 130px;
+    height: 220px;
+    object-fit: cover;
+}
+
+
+                                            /* populaire fin*/
+
+                                            /* activite */
+#activite{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 560px;
+    padding: 20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+#activite h2{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+
+}
+#activite .vitrine {
+    width: 90%;
+    height: 500px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+
+
+#activite img {
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    object-fit: cover;
+}
+
+#activite .vitrine div {
+    object-fit: cover;
+    overflow: hidden;
+    width: 22%;
+    height: 180px;
+    border: 1px transparent white;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px 0px grey;
+    padding-bottom: 5px;
+}
+
+#activite .vitrine .element img{
+    height: 90%;
+}
+#activite .vitrine .element {
+    height: 430px;
+}
+
+#activite .vitrine .element2{
+    height: 220px;
+    margin-bottom: 0px;
+}
+
+#activite .vitrine .element2 img {
+
+}
+
+#activite .vitrine .element3 {
+    height: 150px;
+    margin-top: 0px;
+}
+
+#activite .vitrine .element3 img {
+    height: 70%;
+}
+
+.vitrine p {
+    padding-left: 10px;
+}
+                                                        /* activite fin */
+        /* footer */
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   justify-content: space-around;
+   height: 150px;
+}
+
+footer li {
+    list-style: none;
+    font-weight : 400;
+    color: grey;
+}
+

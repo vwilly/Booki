@@ -1,0 +1,412 @@
+body {
+    font-family: 'Raleway', sans-serif; /* police */
+    font-weight : bold;
+    font-size:  13px;
+}
+
+a
+{ 
+ text-decoration:none; 
+ color: black;
+} 
+
+        /* header */
+header {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+header p i {                    /* icone I */
+    
+    color: #0065FC;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50px;
+    padding-left:6px;
+    padding-top: 3px;
+    
+    height:16px;
+    width: 12px;
+}
+
+header p {
+    list-style: none;
+    font-weight : normal;
+}
+
+h1  {                                            /* logo booki */
+  position: absolute;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 33% ;
+  
+}          
+
+h1 img {
+    width :130px;
+    height: auto;
+}                                     
+
+                                /*   ancre   */
+#ancre {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+
+
+}
+#ancre div {
+    padding-top: 40px;
+    background-color: white;
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    border-bottom:4px solid #F2F2F2;
+    margin: 0 10px 0px 10px;
+}
+
+#ancre a {
+    display: flex;
+    justify-content: center;
+}
+
+#ancre div:hover  {
+    border-bottom-color: #0065FC; 
+    color: #0065FC;
+}
+
+#ancre a:hover{
+     color: #0065FC;
+}
+
+                            /*  ancre  */
+                            /*  bar de recherche  */
+#recherche {
+    display: flex;
+    justify-content: center;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.champ {
+    height: 30px;
+    border: 2px solid #F2F2F2;
+    outline: none;
+ 
+}
+
+#recherche button  {                   /* icone geolocalisation */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 36px;
+    width: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+ .bouton {                           /*bouton de recherche */
+    border-radius: 10px ;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: #0065FC;
+    color: white;
+    border: 2px solid #0065FC;
+
+ }
+
+
+ .bouton p {
+     display: none;
+ }
+                                   /*  barre de recherche  */
+                                    /* barre denavigation */
+
+nav input  { 
+    border:white;
+ }
+
+
+nav ul {
+    list-style: none;   /* enlever les puces */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 220px;
+    flex-wrap: wrap;
+}
+
+nav li {                    /* boutons nav */
+    margin: 20px 10px 0 10px;
+    border: 2px solid #DEEBFF;
+    border-radius: 40px;
+    cursor: pointer;
+    width: auto;
+    padding-top: 0px;
+    padding-right: 6px;
+    
+}
+nav ul i {                  /*icones*/
+    color:  #0065FC;
+    height: 24px;
+    width: 24px;
+    border: 3px solid #DEEBFF;
+    border-radius: 40px;
+    background-color: #DEEBFF;
+    padding: 7px 0px 0px 7px;
+}
+
+nav ul div {                /* "filtres" */
+    padding-top: 10px;
+}
+
+nav li:hover {
+    border-color: #0065FC;
+    box-shadow: inset 5px 1px 10px #0065FC;
+}
+
+nav li:hover i {
+    color: white;
+    background-color: #0065FC;
+    border-color: #0065FC;
+}
+
+ #familial {
+    order: 4;
+    margin-top: 45px;
+ }
+ #animau {
+    order: 2;
+}
+                                    /*barre de navigtion fin*/
+
+#logement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+mark {
+    background-color: white;
+    font-size: small;
+    font-weight: normal;
+}
+
+#logement #etoileGrise {
+    color: #F2F2F2;
+}
+.fas.fa-star {
+    color: #0065FC;
+    font-size: 80%;
+}
+
+#plus {
+    position: relative;
+    left: 10px;
+    bottom: 5px;
+    color: blue;
+}
+                                                        /*boite hebergement*/
+#hebergement {
+    order: 1;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretchs ;
+    border: 1px solid #F2F2F2;
+    width: 90%;
+    height: 530px;
+    padding: 15px;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.vitrine {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#hebergement h2 {
+    position: relative;
+    top: 0px;
+    left: 20px;
+}
+
+.proposition {
+    background-color: white;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 180px;
+    border-radius: 20px;
+    padding: 4px 4px;
+    margin: 15px;
+    
+}
+
+.proposition img {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+#hebergement .proposition p {
+                                 /* marge pour les ecritures */
+    padding: 2px 15px;
+    margin: 0;
+}
+#hebergement .proposition div {
+    padding-left: 15px;
+}
+
+.prix {
+    font-size: small;
+    font-weight: normal;
+    
+}
+
+.vitrineLigne{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.plus{
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+   
+}
+
+                                                            /*boite populaire*/
+#populaire {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    width: 60%;
+    height: 580px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+#populaire .proposition  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 120px;
+    
+}
+
+#populaire p {
+    width: 50%;
+    margin-top: 5px;
+}
+
+#populaire div {
+    padding-top: 20px;
+}
+
+#populaire img {
+    border-radius: 20px 0px 0px 20px;
+    width: 38%;
+    object-fit: cover;
+ 
+}
+                                            /* populaire fin*/
+                                            /* activite */
+#activite{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95%;    
+}
+
+#activite h2{
+    position: relative;
+    padding-bottom: 30px;
+    top: 20px;
+    left: 30%;
+    width: 200px;
+
+}
+#activite .vitrine {
+    width: 95%;
+    height: 800px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    
+}
+
+
+#activite img {
+    height: 120px;
+    width: 280px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    object-fit: cover;
+}
+
+#activite .vitrine div {
+    overflow: hidden;
+    width: 280px;
+    border: 1px transparent white;
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px 0px grey;
+}
+#activite .element img {
+    height: 360px;
+}
+
+.vitrine p {
+    padding-left: 10px;
+}
+                                                        /* activite fin */
+        /* footer */
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+   justify-content: space-around;
+   height: 150px;
+}
+
+footer li {
+    list-style: none;
+    font-weight : 400;
+    color: grey;
+}
